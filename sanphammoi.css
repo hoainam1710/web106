@@ -71,6 +71,7 @@ nav li a:hover{
 .wrapper_head{
     position: fixed;
     width: 100%;
+    height: auto;
     top: 0px;
     left: 0px;
 }
@@ -207,7 +208,7 @@ footer{
 
 
 /* For smaller screens 1023 */
-@media only screen and (max-width: 2476px) {
+@media only screen and (max-width: 1024px) {
     header {
         flex-direction: column;
         align-items: center;
