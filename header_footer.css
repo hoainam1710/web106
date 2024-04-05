@@ -1,0 +1,108 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.wrapper_head {
+    background-color: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.form_search {
+    display: flex;
+}
+
+.form_search input[type="text"] {
+    padding: 8px;
+}
+
+.form_search button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.wrapper_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thuonghieu,
+.hotro,
+.hethong {
+    text-align: left;
+    flex: 1;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper_head {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form_search {
+        margin-top: 10px;
+    }
+    
+    nav {
+        text-align: center;
+    }
+    
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        padding: 10px;
+    }
+    
+    .wrapper_footer {
+        flex-direction: column;
+    }
+}

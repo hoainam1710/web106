@@ -1,0 +1,333 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    margin: 0px auto;
+    width: 100%;
+    /* background-color: #F5EBDF; */
+
+}
+header{  
+    height: 300px;
+    background-color: #F5EBDF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 1px solid white; */
+}
+.title{
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 40%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form_search{
+    margin-right: 300px;
+}
+.form_search input{
+    padding: 30px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 500px;
+    margin-right: 0px;
+    font-size: 25px;
+}
+.form_search button{
+    padding: 30px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #C0C0C0;
+    font-size: 25px;
+}
+nav {
+    height: 150px;
+    background-color: #F5EBDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px solid;
+    box-shadow: 0 0 1px; */
+    border-bottom: 1px solid white;
+}
+nav li{
+    list-style: none;
+    margin-left: 150px;
+}
+nav li a{
+    text-decoration: none;
+    color: #565C62;
+    font-size: 40px;
+}
+nav li a:hover{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+.wrapper_head{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.content{
+    margin-top: 450px;
+    width: 80%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+
+.thumb a img{
+    height: 800px;
+    max-width: 100%;  
+}
+
+.thumb_sp a img{
+    /* width: 1500px; */
+    height: 500px;
+    max-width: 100%;  
+}
+
+.card_grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.card{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    /* align-items: center; */   
+}
+.thumb{
+    max-width: 65%;
+}
+.sanpham{
+    flex: 1;
+}
+
+.thumb_sp a img{
+    max-width: 600px;
+    height: auto;
+    /* height: 500px; */
+}
+.sanpham{
+    text-align: center;
+    margin-top: 10px;
+}
+.card_title{
+    text-align: center;
+    font-size: 30px;
+    padding: 0px 90px;
+    color: #565C62;
+
+}
+.card_title:hover{
+    color: orangered;
+    
+}
+.card_gia{
+    font-size: 30px;
+    color: orangered;
+    margin: 25px;
+    font-weight: bold;
+}
+.sanpham button{
+    padding: 20px;
+    
+    font-size: 30px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+
+    background-color: #282b2e;
+    color: whitesmoke;
+    padding: 50px 0;
+}
+.wrapper_footer{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.form_email{
+    display: flex;
+    justify-content: center;
+        
+}
+.form_email input{
+    padding: 20px;
+    border: none;
+    width: 300px;
+    margin-right: 0px;
+    font-size: 15px;
+    border: 1px solid white;
+
+}
+.form_email button{
+    padding: 20px;
+    border: none;
+    background-color: #282b2e;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+
+}
+
+.thuonghieu,
+.hotro,
+.hethong {
+    font-size: 25px;
+    flex: 1;
+    margin: 0 10px;
+    line-height: 50px;
+}
+
+
+/* For smaller screens 1023 */
+@media only screen and (max-width: 2476px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .title {
+        margin-top: 40px;
+        font-size: 60px; /* Adjust title font size */
+        margin-left: 0; /* Reset margin-left */
+        text-align: center; /* Center align the title */
+    }
+    .form_search {
+        display: flex;
+        
+        margin-right: 0; /* Reset margin-right */
+    }
+    .form_search input {
+        width: calc(100% - 200px); /* Adjust search input width */
+    }
+    .form_search button {
+        margin-left: 10px; /* Add some space between input and button */
+    }
+    nav {
+        height: auto; /* Auto height for navigation */
+        flex-direction: column; /* Arrange navigation links vertically */
+        align-items: center; /* Center align navigation links */
+        justify-content: center; /* Center align navigation links */
+    }
+    nav li {
+        margin: 10px 0; /* Add some space between navigation links */
+    }
+    nav li a{
+        font-size: 30px;
+    }
+    
+    .content {
+        height: auto; /* Auto height for content */
+        padding-top: 10px; /* Adjust top padding */
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */   
+    }
+    
+    .card_title {
+        font-size: 30px; /* Adjust product name font size */
+    }
+    .card_gia {
+        font-size: 30px; /* Adjust product description font size */
+    }
+    .card button {
+        width: 250px; /* Adjust button width */
+    }
+   
+   
+    .wrapper_footer {
+        flex-direction: column; /* Arrange footer content vertically */
+        align-items: center; /* Center align footer content */
+    }
+    .thuonghieu,
+    .hotro,
+    .hethong {
+        text-align: center; /* Center align footer content */
+        margin: 20px 0; /* Add some space between footer content */
+    }
+    .hotro {
+        margin-left: 0; /* Reset left margin */
+    }
+    .form_email input {
+        width: calc(100% - 120px); /* Adjust email input width */
+    }
+    .content{
+        margin-bottom: 100px;
+    }
+}
+
+/* For even smaller screens */
+@media only screen and (max-width: 767px) {
+    .title {
+        font-size: 30px; /* Further adjust title font size */
+    }
+    .form_search{
+        display: flex;
+        margin-bottom: 40px;
+            
+    }
+    .form_search input {
+        width: calc(100% - 200px); /* Adjust search input width */
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .form_search button {
+        width: calc(100% - 220px);
+         /* Add some space between input and button */
+        font-size: 15px;
+    }
+
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    
+    .card_title {
+        font-size: 30px; /* Further adjust product name font size */
+    }
+    .card_gia {
+        font-size: 30px; /* Further adjust product description font size */
+    }
+    .card button {
+        width: 100px; /* Further adjust button width */
+        font-size: 20px;
+    }
+    .content{
+        margin-bottom: 100px;
+    }
+}
+
+
+

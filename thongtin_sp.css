@@ -1,0 +1,382 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    margin: 0px auto;
+    max-width: 100%;  
+}
+header{  
+    height: 300px;
+    background-color: #F5EBDF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 1px solid white; */
+}
+.title{
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 40%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form_search{
+    margin-right: 400px;
+}
+.form_search input{
+    padding: 30px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    max-width: 500px;
+    
+    margin-right: 0px;
+    font-size: 25px;
+}
+.form_search button{
+    padding: 30px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #C0C0C0;
+    font-size: 25px;
+}
+nav {
+    height: 150px;
+    background-color: #F5EBDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+nav li{
+    list-style: none;
+    margin-left: 150px;
+}
+nav li a{
+    text-decoration: none;
+    color: #565C62;
+    font-size: 40px;
+}
+nav li a:hover{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+.wrapper_head{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+
+.content{
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    padding-top: 20px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.thumb img{
+    max-width: 100%;
+}
+
+.card{
+    margin-top: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    height: 1200px;
+
+}
+.sanpham{
+    width: 40%;
+    padding: 40px;
+    text-align: center;
+}
+.thongtin{
+    flex: 1;
+    text-align: center;
+    padding: 70px;
+    margin-top: 50px;
+    
+}
+.product_name{
+    margin-top: 20px;
+    text-align: center;
+}
+.thongtin_title{
+    text-align: justify;
+    font-size: 40px;
+    font-weight: bold;
+    color: #565C62;
+    margin-bottom: 25px;
+
+}
+.thongtin_sanpham{
+    font-size: 35px;
+    color: #565C62;
+    text-align: justify;
+}
+.product_name a{
+    text-decoration: none;
+    color: #565C62;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    
+}
+.product_name a:hover{
+    text-decoration: none;
+    color: orangered;
+}
+.product_desc{
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    margin-top: 20px;
+
+}
+
+.card button{
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 30px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.feedback{
+    margin-top: 800px;
+    padding: 30px;
+    text-align: center;
+}
+.feedback a{
+    
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.feedback a:hover{
+    color: red;
+    font-weight: bold;
+
+}
+.feedback_image{
+    height: 800px;
+    max-width: 80%;
+    margin: 0px auto;
+    background-image: url("image/trangchu/feedback2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 20px;
+}
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    background-color: #282b2e;
+    color: whitesmoke;
+    padding: 50px 0;
+}
+.wrapper_footer{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.form_email{
+    display: flex;
+    justify-content: center;
+        
+}
+.form_email input{
+    padding: 20px;
+    border: none;
+    width: 300px;
+    margin-right: 0px;
+    font-size: 15px;
+    border: 1px solid white;
+
+}
+.form_email button{
+    padding: 20px;
+    border: none;
+    background-color: #282b2e;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+
+}
+
+.thuonghieu,
+.hotro,
+.hethong {
+    font-size: 25px;
+    flex: 1;
+    margin: 0 10px;
+    line-height: 50px;
+}
+
+
+
+/* For smaller screens 1023 */
+@media only screen and (max-width: 2476px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .title {
+        margin-top: 40px;
+        font-size: 60px; /* Adjust title font size */
+        margin-left: 0; /* Reset margin-left */
+        text-align: center; /* Center align the title */
+    }
+    .form_search {
+        display: flex;
+        
+        margin-right: 0; /* Reset margin-right */
+    }
+    .form_search input {
+        width: calc(100% - 200px); /* Adjust search input width */
+    }
+    .form_search button {
+        margin-left: 10px; /* Add some space between input and button */
+    }
+    nav {
+        height: auto; /* Auto height for navigation */
+        flex-direction: column; /* Arrange navigation links vertically */
+        align-items: center; /* Center align navigation links */
+        justify-content: center; /* Center align navigation links */
+    }
+    nav li {
+        margin: 10px 0; /* Add some space between navigation links */
+    }
+    nav li a{
+        font-size: 30px;
+    }
+    .banner1 {
+        
+        margin-top: 500px; /* Adjust top margin */
+        height: 600px; /* Adjust banner height */
+    }
+    .content {
+        height: auto; /* Auto height for content */
+        padding-top: 10px; /* Adjust top padding */
+
+    }
+    .card_grid {
+        grid-template-columns: repeat(2, 1fr); /* Display cards in two columns */
+    }
+    .product_name a {
+        font-size: 20px; /* Adjust product name font size */
+    }
+    .product_desc {
+        font-size: 20px; /* Adjust product description font size */
+    }
+    .card button {
+        width: 200px; /* Adjust button width */
+    }
+    
+
+    .feedback_image {
+        height: 600px; /* Adjust height */
+    }
+    
+    .feedback a{
+        font-size: 40px;
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .thongtin{
+        font-size: 15px;
+    }
+   
+    .wrapper_footer {
+        flex-direction: column; /* Arrange footer content vertically */
+        align-items: center; /* Center align footer content */
+    }
+    .thuonghieu,
+    .hotro,
+    .hethong {
+        text-align: center; /* Center align footer content */
+        margin: 20px 0; /* Add some space between footer content */
+    }
+    .hotro {
+        margin-left: 0; /* Reset left margin */
+    }
+    .form_email input {
+        width: calc(100% - 120px); /* Adjust email input width */
+    }
+}
+
+/* For even smaller screens */
+@media only screen and (max-width: 767px) {
+    .title {
+        font-size: 30px; /* Further adjust title font size */
+    }
+    .form_search{
+        display: flex;
+        margin-bottom: 40px;
+            
+    }
+    .form_search input {
+        width: calc(100% - 200px); /* Adjust search input width */
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .form_search button {
+        width: calc(100% - 220px);
+         /* Add some space between input and button */
+        font-size: 15px;
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .product_name{
+        text-align: justify;
+        font-size: 20px;
+    }
+    .product_desc {
+        font-size: 20px; /* Further adjust product description font size */
+    }
+    .card button {
+        font-size: 20px;
+        width: 100px; /* Further adjust button width */
+    } */
+    .thongtin.thongtin_title{
+        font-size: 25px;
+    }
+    .thongtin.thongtin_sanpham{
+        font-size: 25px;
+    }
+    .thumb img{
+        width: 100px;
+        height: 100px;
+    }
+    .content{
+        height: auto;
+        margin-bottom: 100px;
+    }
+}
